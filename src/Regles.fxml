@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" />
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <Label prefHeight="77.0" prefWidth="629.0" style="-fx-background-color: #867a7a;" text="Base des Régles" textFill="#e8bdbd" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <GridPane prefHeight="163.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.0" minWidth="10.0" prefWidth="344.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="112.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onC" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField text="Faits">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="323.0" prefWidth="168.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="test" text="Les Régles" />
+                  <ListView prefHeight="306.0" prefWidth="168.0" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+      <TextField layoutX="10.0" layoutY="10.0" text="Faits" />
+   </children>
+</AnchorPane>
